@@ -7,7 +7,7 @@ if onset < end:
             print(x)
 
 elif onset == end:
-    if onset and end % 2 != 0:
+    if (onset and end) % 2 != 0:
         print(0)
     else:
         print(onset or end)
