@@ -9,7 +9,19 @@ while x < num:
         i += 1
     print()
 
-# for i in range(1, num + 1):
-#     for j in range(i):
-#         print(i, end=" ")
-#     print()
+# -----
+i = 1
+while i <= num:
+    j = 0
+    while j < i:
+        print(i, end=" ")
+        j += 1
+    print()
+    i += 1
+
+# -----
+
+for i in range(1, num + 1):
+    for j in range(i):
+        print(i, end=" ")
+    print()
