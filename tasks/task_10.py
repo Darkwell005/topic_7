@@ -1,7 +1,7 @@
 onset: int = int(input("Введите начало диапазона: "))
 end: int = int(input("Введите конец диапазона: "))
 
-if ...  (onset < 0 or end < 0):  # Необходимо улучшить
+if onset == end or (onset < 0 or end < 0):
     print("Некорректный диапазон")
 
 else:
@@ -9,8 +9,7 @@ else:
     # if onset > end:
     #     onset, end = end, onset
 
-    onset, end = ...  # здесь нужно определить начало и конец
-
+    onset, end = max()
     for num in range(onset, end + 1):
 
         num_digits = len(str(num))
